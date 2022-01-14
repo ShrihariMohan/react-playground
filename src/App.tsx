@@ -7,6 +7,8 @@ import Helloworld from './components/mainConcepts/1_Helloworld';
 import PropsExample from './components/mainConcepts/4_Props';
 import ReactElement from './components/mainConcepts/3_ReactElement';
 import List from './components/mainConcepts/8_ListAndKeys';
+import Forms from './components/mainConcepts/9_forms';
+import Calculator from './components/mainConcepts/10_LiftingStateUp/Calculator';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Toggle />
       <HomePage isLoggedIn={false} />
       <List list={[1, 2, 3, 4]} />
+      <Forms />
+      <Calculator />
 
     </>
   );

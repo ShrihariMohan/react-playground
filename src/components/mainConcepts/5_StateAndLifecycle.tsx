@@ -13,8 +13,7 @@ export class TickingClock extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props)
     this.state = { counter: this.counter }
-    // The only place where you can assign this.state is the constructor.
-
+    // The only place where you can assign ('=' use equal) this.state is the constructor.
 
   }
   componentDidMount() {
