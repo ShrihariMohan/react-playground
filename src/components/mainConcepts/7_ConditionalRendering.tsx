@@ -32,12 +32,12 @@ class Warning extends React.Component<IWarningProps> {
   */
 
   componentDidMount() {
-    console.log("🚀 ~ file: 7_ConditionalRendering.tsx ~ line 29 ~ Warning ~ componentDidMount ~ componentDidMount")
+    // console.log("🚀 ~ file: 7_ConditionalRendering.tsx ~ line 29 ~ Warning ~ componentDidMount ~ componentDidMount")
 
   }
 
   componentDidUpdate() {
-    console.log("🚀 ~ file: 7_ConditionalRendering.tsx ~ line 28 ~ Warning ~ componentDidUpdate ~ componentDidUpdate")
+    //  console.log("🚀 ~ file: 7_ConditionalRendering.tsx ~ line 28 ~ Warning ~ componentDidUpdate ~ componentDidUpdate")
 
   }
 

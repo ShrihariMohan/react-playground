@@ -9,6 +9,8 @@ import ReactElement from './components/mainConcepts/3_ReactElement';
 import List from './components/mainConcepts/8_ListAndKeys';
 import Forms from './components/mainConcepts/9_forms';
 import Calculator from './components/mainConcepts/10_LiftingStateUp/Calculator';
+import ChildrenAsProps from './components/mainConcepts/11_CompositionVsInheritance';
+import FilterableProductTable from './components/mainConcepts/12_ThinkingInReact/FilterableProductTable';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <List list={[1, 2, 3, 4]} />
       <Forms />
       <Calculator />
+      <ChildrenAsProps />
+      <FilterableProductTable />
 
     </>
   );
