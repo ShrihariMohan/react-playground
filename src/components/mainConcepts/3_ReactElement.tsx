@@ -1,5 +1,5 @@
 const element = (
-  <div>
+  <div className="text-center">
     <p> Hello man , this from a element const </p>
     <p> Hello man, this is from a element const</p>
   </div>

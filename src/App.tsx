@@ -11,11 +11,13 @@ import Forms from './components/mainConcepts/9_forms';
 import Calculator from './components/mainConcepts/10_LiftingStateUp/Calculator';
 import ChildrenAsProps from './components/mainConcepts/11_CompositionVsInheritance';
 import FilterableProductTable from './components/mainConcepts/12_ThinkingInReact/FilterableProductTable';
+import CardContainer from './uiComponents/HorizontalCards/CardContainer';
 
 function App() {
   return (
-    <>
+    <div className='bg-slate-200'>
       <Helloworld />
+      <CardContainer />
       <ReactElement />
       <ComponentAsElement />
       <PropsExample name='prop1' />
@@ -30,7 +32,7 @@ function App() {
       <ChildrenAsProps />
       <FilterableProductTable />
 
-    </>
+    </div>
   );
 }
 
