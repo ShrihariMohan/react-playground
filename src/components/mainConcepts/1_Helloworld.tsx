@@ -4,7 +4,7 @@ const element = <h1> Hello man , {myName}</h1>
 const anotherElement = 'Hello man! Using Styled Components'
 
 const Title = styled.h1`
-font-size : 6rem;
+font-size : 4rem;
 font-weight : 600;
 `
 function Helloworld() {

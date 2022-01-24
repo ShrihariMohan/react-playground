@@ -38,15 +38,31 @@ class Toggle extends React.Component<IProps, IState> {
 
   render(): React.ReactNode {
     return (
-      <>
-        <button onClick={this.handleTooggle}>
-          {this.state.isToggleOn ? 'On' : 'Off'}
-        </button>
+      <div className='my-6 '>
+        <p> The below button shows how a <span className='text-blue-600 font-semibold'>Primary</span>, <span className='text-green-600 font-semibold'>Secondary</span> and <span className='text-red-600 font-semibold'>Tertiary</span> can be. <span className='font-semibold'> Its not colors always</span></p>
+        <div className='flex align-middle text-center'>
+          <div className='flex flex-col mx-4'>
+            <button onClick={this.handleTooggle} className='bg-gray-600 text-white rounded-xl px-4 py-3 m-2'>
+              {this.state.isToggleOn ? 'Primary  On' : 'Primary Off'}
+            </button>
+            <small>Binded handleToggle()</small>
+          </div>
 
-        <button onClick={this.handleToggleWithoutBind}>
-          {this.state.isToggleOnWithoutBind ? 'On' : 'Off'}
-        </button>
-      </>
+          <div className='flex flex-col mx-4'>
+            <button onClick={this.handleToggleWithoutBind} className='border border-gray-400  rounded-xl px-4 py-3 m-2'>
+              {this.state.isToggleOnWithoutBind ? 'Secondary On' : 'Secondary Off'}
+            </button>
+            <small>Arrow function (no bind)</small>
+
+          </div>
+
+          <div className='flex flex-col align-middle mx-4'>
+            <button className='font-semibold  px-4 py-3 m-2'> Tertiary </button>
+            <small> No handleClick()</small>
+          </div>
+
+        </div>
+      </div>
     )
   }
 

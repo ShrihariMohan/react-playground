@@ -2,23 +2,20 @@ import React from 'react'
 function Login() {
   return (
     <>
-      <p> Please log in</p>
+      <p className='text-lg'> Click the below button to sign in as guest (😆)</p>
     </>
   )
 }
 
 function Welcome() {
   return (
-    <>
-      <p> Welcome user</p>
-    </>
+    <p> Welcome Guest user 😉 <span className='text-sm font-semibold '>(Short circuit operators are widely used in react)</span></p>
   )
 }
 
 type IWarningProps = {
   isWarning: boolean
 }
-
 class Warning extends React.Component<IWarningProps> {
 
   constructor(props: IWarningProps) {
@@ -44,7 +41,7 @@ class Warning extends React.Component<IWarningProps> {
   render() {
     const isWarning = this.props.isWarning
     return <>
-      {isWarning ? <small> This is a warning man </small> : null}
+      {isWarning ? <p className='text-yellow-600 text-sm font-bold'> This is a warning man </p> : null}
     </>
   }
 }
@@ -56,7 +53,7 @@ type IButtonProps = {
 function LoginButton(props: IButtonProps) {
   return (
     <>
-      <button onClick={props.handleClick} >
+      <button onClick={props.handleClick} className='bg-blue-600 text-white rounded-xl px-4 py-3 m-2 w-32'>
         Log in
       </button>
     </>
@@ -66,7 +63,7 @@ function LoginButton(props: IButtonProps) {
 function LogoutButton(props: IButtonProps) {
   return (
     <>
-      <button onClick={props.handleClick}>
+      <button onClick={props.handleClick} className='bg-red-50 text-red-600  rounded-xl px-4 py-3 m-2 w-32' >
         Log out
       </button>
     </>
@@ -127,7 +124,10 @@ class HomePage extends React.Component<IPropsHomePage, IStateHomePage>{
   render(): React.ReactNode {
     const isLoggedIn = this.state.isLoggedIn
     return (
-      <>
+      <div className='my-4'>
+        <p>
+          {isLoggedIn && <p className='text-lg'>This example has <span className='font-semibold'>Conditionally Rendered </span> components and texts</p>}
+        </p>
 
         {
           isLoggedIn ?
@@ -140,12 +140,8 @@ class HomePage extends React.Component<IPropsHomePage, IStateHomePage>{
               <LoginButton handleClick={this.handleClickLogin} />
             </>
         }
-
-        <p>
-          {isLoggedIn && 'Hello user'}
-        </p>
         <Warning isWarning={isLoggedIn} />
-      </>
+      </div>
     )
   }
 

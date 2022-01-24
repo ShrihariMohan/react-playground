@@ -13,6 +13,7 @@ const cards: ICard[] = [
   { day: 3, subTitle: 'React Basics', learntSubjects: ['Forms', 'Lifting State Up'] },
   { day: 4, subTitle: 'React Basics', learntSubjects: ['Components vs Inheritance', 'Thinking in React (Includes mini temperature converter app)'] },
   { day: 5, subTitle: 'Styling in react', learntSubjects: ['Tailwind CSS Setup', 'Basic React Styled Components', 'Implemented this cards '] },
+  { day: 6, subTitle: 'Practicing Styling with Tailwind', learntSubjects: ['Added React Playground', 'Refactoring UI upto Page 51', 'Key Take : Colors are important not always', 'Styled some existing components'] }
 
 ]
 

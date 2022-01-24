@@ -18,20 +18,20 @@ function App() {
     <div className='bg-slate-200'>
       <Helloworld />
       <CardContainer />
-      <ReactElement />
-      <ComponentAsElement />
-      <PropsExample name='prop1' />
-      <PropsExample name='prop2' />
-      <TickingClock increment={1} />
-      <TickingClock increment={2} />
-      <Toggle />
-      <HomePage isLoggedIn={false} />
-      <List list={[1, 2, 3, 4]} />
-      <Forms />
-      <Calculator />
-      <ChildrenAsProps />
-      <FilterableProductTable />
-
+      <div className='px-2'>
+        <PropsExample name='React Playground' />
+        <ReactElement />
+        <ComponentAsElement />
+        <TickingClock increment={1} />
+        <TickingClock increment={2} />
+        <Toggle />
+        <HomePage isLoggedIn={false} />
+        <List list={[1, 2, 3, 4]} />
+        <Forms />
+        <Calculator />
+        <ChildrenAsProps />
+        <FilterableProductTable />
+      </div>
     </div>
   );
 }

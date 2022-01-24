@@ -39,9 +39,11 @@ export class TickingClock extends React.Component<IProps, IState> {
 
   render(): React.ReactNode {
     return (
-      <>
-        <p> this timer is now active {this.state.counter}, rendered using class components</p>
-      </>
+      <div className="p-3">
+        <p> This is a time bomb that never explodes <span className='font-bold'> {this.state.counter}</span>
+        </p>
+        <p className='text-gray-600 text-sm'> *Rendered using class components</p>
+      </div>
     )
   }
 }

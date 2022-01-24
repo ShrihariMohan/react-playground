@@ -1,7 +1,6 @@
 const element = (
-  <div className="text-center">
-    <p> Hello man , this from a element const </p>
-    <p> Hello man, this is from a element const</p>
+  <div className="text-center text-gray-600">
+    <p> This text is actually saved as a variable </p>
   </div>
 )
 
