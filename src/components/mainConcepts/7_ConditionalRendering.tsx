@@ -1,4 +1,5 @@
 import React from 'react'
+import MainContainer from '../../uiComponents/MainContainer'
 function Login() {
   return (
     <>
@@ -124,24 +125,26 @@ class HomePage extends React.Component<IPropsHomePage, IStateHomePage>{
   render(): React.ReactNode {
     const isLoggedIn = this.state.isLoggedIn
     return (
-      <div className='my-4'>
-        <p>
-          {isLoggedIn && <p className='text-lg'>This example has <span className='font-semibold'>Conditionally Rendered </span> components and texts</p>}
-        </p>
+      <MainContainer>
+        <>
+          <p>
+            {isLoggedIn && <p className='text-lg'>This example has <span className='font-semibold'>Conditionally Rendered </span> components and texts</p>}
+          </p>
 
-        {
-          isLoggedIn ?
-            <>
-              <Welcome />
-              <LogoutButton handleClick={this.handleClickLogout} />
-            </> :
-            <>
-              <Login />
-              <LoginButton handleClick={this.handleClickLogin} />
-            </>
-        }
-        <Warning isWarning={isLoggedIn} />
-      </div>
+          {
+            isLoggedIn ?
+              <>
+                <Welcome />
+                <LogoutButton handleClick={this.handleClickLogout} />
+              </> :
+              <>
+                <Login />
+                <LoginButton handleClick={this.handleClickLogin} />
+              </>
+          }
+          <Warning isWarning={isLoggedIn} />
+        </>
+      </MainContainer>
     )
   }
 

@@ -33,10 +33,12 @@ class SearchBar extends React.Component<IProps, IState> {
 
   render(): React.ReactNode {
     return (
-      <>
-        <input type="text" placeholder="filter the items by name" onChange={this.handleFilterChange} />
-        <input type="checkbox" onChange={this.handleStockChange} /> Only show items in stock
-      </>
+      <div className='text-center'>
+        <input type="text" className='p-3 rounded-lg w-64 border-transparent border hover:border-neutral-700'
+          placeholder="🔎 Search the items by name"
+          onChange={this.handleFilterChange} />
+        <input type="checkbox" className='m-2' onChange={this.handleStockChange} /> In stock
+      </div>
     )
   }
 }

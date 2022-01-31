@@ -1,4 +1,6 @@
 import React from 'react'
+import styled from 'styled-components'
+import { Heading } from '../../../uiComponents/Heading'
 import BoilingVerdict from './BoilingVerdict'
 import TemperatureInput from './TemperatureInputs'
 
@@ -7,6 +9,8 @@ type IState = {
   temperature: number,
   scale: string
 }
+
+
 
 class Calculator extends React.Component<IProps, IState> {
   constructor(props: IProps) {
@@ -40,11 +44,14 @@ class Calculator extends React.Component<IProps, IState> {
     const celsiusValue = this.calculateCelsiusValFromState()
     const kelvinValue = this.calculateKelvinValFromState()
     return (
-      <>
-        <TemperatureInput scale='c' temperature={celsiusValue} onTemperatureChange={this.handleCelsiusChange} />
-        <TemperatureInput scale='k' temperature={kelvinValue} onTemperatureChange={this.handleKelvinChange} />
-        <BoilingVerdict temperature={celsiusValue} />
-      </>
+      <div className='bg-slate-100 rounded-2xl my-2 mx-auto max-w-lg p-4'>
+        <Heading>Temperature Converter</Heading>
+        <div className='flex flex-col text-center'>
+          <TemperatureInput scale='c' temperature={celsiusValue} onTemperatureChange={this.handleCelsiusChange} />
+          <TemperatureInput scale='k' temperature={kelvinValue} onTemperatureChange={this.handleKelvinChange} />
+          <BoilingVerdict temperature={celsiusValue} />
+        </div>
+      </div>
     )
   }
 

@@ -12,7 +12,7 @@ type IProps = {
 function Card(props: IProps) {
   const card = props.card
   return (
-    <div className="shadow-sm rounded-md m-3 bg-slate-100 hover:shadow-md p-4 flex-auto max-w-lg">
+    <div className="shadow-sm rounded-lg m-3 bg-slate-100 min-w-fit hover:shadow-md p-4">
       <div className="mb-4">
         <TitleOfCard>
           Day {card.day}
@@ -22,7 +22,7 @@ function Card(props: IProps) {
       {
         card.learntSubjects.map((value, key) => {
           return (
-            <p className="text-lg break-words" key={key}>  {value} </p>
+            <p className="text-lg break-words text-left" key={key}>  {value} </p>
           )
         })
       }

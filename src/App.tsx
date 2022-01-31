@@ -11,7 +11,7 @@ import Forms from './components/mainConcepts/9_forms';
 import Calculator from './components/mainConcepts/10_LiftingStateUp/Calculator';
 import ChildrenAsProps from './components/mainConcepts/11_CompositionVsInheritance';
 import FilterableProductTable from './components/mainConcepts/12_ThinkingInReact/FilterableProductTable';
-import CardContainer from './uiComponents/HorizontalCards/CardContainer';
+import CardContainer from './HorizontalCards/CardContainer';
 
 function App() {
   return (
@@ -20,17 +20,18 @@ function App() {
       <CardContainer />
       <div className='px-2'>
         <PropsExample name='React Playground' />
+        <Calculator />
+        <FilterableProductTable />
+        <HomePage isLoggedIn={false} />
         <ReactElement />
         <ComponentAsElement />
         <TickingClock increment={1} />
         <TickingClock increment={2} />
         <Toggle />
-        <HomePage isLoggedIn={false} />
         <List list={[1, 2, 3, 4]} />
-        <Forms />
-        <Calculator />
         <ChildrenAsProps />
-        <FilterableProductTable />
+        <Forms />
+
       </div>
     </div>
   );

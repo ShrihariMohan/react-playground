@@ -9,11 +9,13 @@ function ProductTable(props: IProps) {
   return (
     <>
       <ProductTableHeading heading={props.category} />
-      {
-        props.products.map((product, key) => {
-          return <Product {...product} key={product.name} />
-        })
-      }
+      <div className='flex flex-wrap'>
+        {
+          props.products.map((product, key) => {
+            return <Product {...product} key={product.name} />
+          })
+        }
+      </div>
     </>
   )
 }

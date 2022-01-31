@@ -3,8 +3,8 @@ type IProps = {
 }
 
 function BoilingVerdict(props: IProps) {
-  if (props.temperature > 99) return <> Boiling Water</>
-  else return <> Not Boiling water</>
+  if (props.temperature > 99) return <> Boiling Water 🔥</>
+  else return <> Water is not boiling ❄️</>
 }
 
 export default BoilingVerdict

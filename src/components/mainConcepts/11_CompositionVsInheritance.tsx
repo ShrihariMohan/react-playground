@@ -20,9 +20,12 @@ function Parent(props: IProps) {
   if children is inside on div then it is a single element react element else that is an array
   */
   return (
-    <>
+    <div>
+      <h1 className="font-bold text-lg">
+        Children as props
+      </h1>
       {props.children}
-    </>
+    </div>
   )
 }
 
