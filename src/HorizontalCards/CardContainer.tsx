@@ -16,13 +16,14 @@ type IState = {
 }
 
 const cards: ICard[] = [
-  { day: 1, subTitle: 'React Basics', learntSubjects: ['Hello world', 'Introducing JSX', 'Rendering Elements', 'Component & Props'] },
-  { day: 2, subTitle: 'React Basics', learntSubjects: ['State and Lifecycle', 'Handling Events', 'Conditional Rendering', 'Lists & Keys'] },
-  { day: 3, subTitle: 'React Basics', learntSubjects: ['Forms', 'Lifting State Up'] },
-  { day: 4, subTitle: 'React Basics', learntSubjects: ['Components vs Inheritance', 'Thinking in React (Includes mini temperature converter app)'] },
-  { day: 5, subTitle: 'Styling in react', learntSubjects: ['Tailwind CSS Setup', 'Basic React Styled Components', 'Implemented this cards '] },
+  { day: 8, subTitle: 'React Advanced Guides', learntSubjects: ['Code Splitting', 'Contexts', 'Error Boundaries', 'Forwarding Refs', 'Fragments'] },
+  { day: 7, subTitle: 'Tailwind and styled components', learntSubjects: ['Added tailwind css in most of the places', 'Added 4 Styled components with conditional rendering', 'UI - Temperature Convertor', 'UI - Stocks 🤣'] },
   { day: 6, subTitle: 'Practicing Styling with Tailwind', learntSubjects: ['Added React Playground', 'Refactoring UI upto Page 51', 'Key Take : Colors are important not always', 'Styled some existing components'] },
-  { day: 7, subTitle: 'Tailwind and styled components', learntSubjects: ['Added tailwind css in most of the places', 'Added 4 Styled components with conditional rendering', 'UI - Temperature Convertor', 'UI - Stocks 🤣'] }
+  { day: 5, subTitle: 'Styling in react', learntSubjects: ['Tailwind CSS Setup', 'Basic React Styled Components', 'Implemented this cards '] },
+  { day: 4, subTitle: 'React Basics', learntSubjects: ['Components vs Inheritance', 'Thinking in React (Includes mini temperature converter app)'] },
+  { day: 3, subTitle: 'React Basics', learntSubjects: ['Forms', 'Lifting State Up'] },
+  { day: 2, subTitle: 'React Basics', learntSubjects: ['State and Lifecycle', 'Handling Events', 'Conditional Rendering', 'Lists & Keys'] },
+  { day: 1, subTitle: 'React Basics', learntSubjects: ['Hello world', 'Introducing JSX', 'Rendering Elements', 'Component & Props'] },
 
 ]
 class CardContainer extends React.Component<IProps, IState> {

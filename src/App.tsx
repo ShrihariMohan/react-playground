@@ -12,28 +12,42 @@ import Calculator from './components/mainConcepts/10_LiftingStateUp/Calculator';
 import ChildrenAsProps from './components/mainConcepts/11_CompositionVsInheritance';
 import FilterableProductTable from './components/mainConcepts/12_ThinkingInReact/FilterableProductTable';
 import CardContainer from './HorizontalCards/CardContainer';
+import { ThemeContext } from './components/advancedGuides/3_Context/3_Context';
+import ComponentContainingContext from './components/advancedGuides/3_Context/3_ComponentContainingContext';
+import ErrorBoundaries from './components/advancedGuides/4_ErrorBoundary';
+import CreatingRef from './components/advancedGuides/5_ForwardingRefs/UsingReference';
+import loggingProps from './components/advancedGuides/5_ForwardingRefs/LogginProps';
+import { ThatReturnsFragments, ThatReturnsShortSyntaxFragments } from './components/advancedGuides/6_Fragments';
 
 function App() {
   return (
-    <div className='bg-slate-200'>
-      <Helloworld />
-      <CardContainer />
-      <div className='px-2'>
-        <PropsExample name='React Playground' />
-        <Calculator />
-        <FilterableProductTable />
-        <HomePage isLoggedIn={false} />
-        <ReactElement />
-        <ComponentAsElement />
-        <TickingClock increment={1} />
-        <TickingClock increment={2} />
-        <Toggle />
-        <List list={[1, 2, 3, 4]} />
-        <ChildrenAsProps />
-        <Forms />
+    <ThemeContext.Provider value='dark'>
+      <div className='bg-slate-200 '>
+        <Helloworld />
+        <CardContainer />
+        <div className='px-2'>
+          <PropsExample name='React Playground' />
+          <Calculator />
+          <FilterableProductTable />
+          <HomePage isLoggedIn={false} />
+          <ReactElement />
+          <ComponentAsElement />
+          <TickingClock increment={1} />
+          <TickingClock increment={2} />
+          <Toggle />
+          <List list={[1, 2, 3, 4]} />
+          <ChildrenAsProps />
+          <Forms />
+          <ErrorBoundaries>
+            <ComponentContainingContext />
+          </ErrorBoundaries>
+          <CreatingRef />
+          <ThatReturnsFragments />
+          <ThatReturnsShortSyntaxFragments />
 
+        </div>
       </div>
-    </div>
+    </ThemeContext.Provider>
   );
 }
 

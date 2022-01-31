@@ -1,13 +1,13 @@
 import styled from "styled-components"
 
-function List(props: { list: number[] }) {
-
-  const Item = styled.li`
+const Item = styled.li`
     font-size: large;
     font-weight: bolder;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   `
+
+function List(props: { list: number[] }) {
 
   const listItems = props.list
   const doubledListItems = listItems.map((number) => number = number * 2)
