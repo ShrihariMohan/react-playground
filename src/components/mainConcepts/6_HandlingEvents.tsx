@@ -39,7 +39,7 @@ class Toggle extends React.Component<IProps, IState> {
   render(): React.ReactNode {
     return (
       <div className='my-6'>
-        <p> The below button shows how a <span className='text-blue-600 font-semibold'>Primary</span>, <span className='text-green-600 font-semibold'>Secondary</span> and <span className='text-red-600 font-semibold'>Tertiary</span> can be. <span className='font-semibold'> Its not colors always</span></p>
+        <p> The below button shows how a <span className='text-cyan-600 font-semibold'>Primary</span>, <span className='text-green-600 font-semibold'>Secondary</span> and <span className='text-red-600 font-semibold'>Tertiary</span> can be. <span className='font-semibold'> Its not colors always</span></p>
         <div className='flex flex-wrap align-middle text-center'>
           <div className='flex flex-col mx-4'>
             <button onClick={this.handleTooggle} className='bg-gray-600 text-white rounded-xl px-4 py-3 m-2'>

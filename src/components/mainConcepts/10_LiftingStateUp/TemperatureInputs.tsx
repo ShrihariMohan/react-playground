@@ -22,7 +22,7 @@ function TemperatureInput(props: IProps) {
         name="temperature" onChange={handleChange} placeholder={placeholder} />
       <p className="self-center">
         In
-        <span className="text-blue-600"> {props.scale === 'c' ? '℃' : 'K'}</span>
+        <span className="text-cyan-600"> {props.scale === 'c' ? '℃' : 'K'}</span>
       </p>
     </div>
   )

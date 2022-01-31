@@ -16,7 +16,7 @@ export function Product(product: IProduct) {
           {product.image}
         </p>
 
-        <p className="self-center font-bold text-blue-600 ml-2">
+        <p className="self-center font-bold text-cyan-600 ml-2">
           {product.price}
         </p>
       </div>

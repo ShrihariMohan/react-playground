@@ -33,7 +33,7 @@ class Forms extends React.Component<IProps, IState> {
       <div className="my-4">
         < form onSubmit={this.handleSubmit} className="flex " >
           <input type="text" className="rounded-2xl p-3 m-1 hover:bg-neutral-100" value={this.state.value} onChange={this.handleChange} placeholder="Type something 😛" />
-          <input type="submit" className=" m-1  text-blue-600  hover:font-bold" value="Submit" />
+          <input type="submit" className=" m-1  text-cyan-600  hover:font-bold" value="Submit" />
         </form >
       </div >
     )
