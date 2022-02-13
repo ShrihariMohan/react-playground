@@ -12,7 +12,7 @@ type IProps = {
 function Card(props: IProps) {
   const card = props.card
   return (
-    <div className="shadow-sm rounded-lg m-3 bg-slate-100 min-w-fit hover:shadow-md p-4">
+    <div className="shadow-sm rounded-lg m-3 bg-slate-100 min-w-fit  p-4">
       <div className="mb-4">
         <TitleOfCard>
           Day {card.day}

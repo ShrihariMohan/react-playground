@@ -16,6 +16,7 @@ type IState = {
 }
 
 const cards: ICard[] = [
+  { day: 9, subTitle: 'React Advanced Guides', learntSubjects: ['Revist Error Boundaries', 'Pure Components', 'ShouldComponentUpdate() lifecycle', 'Refactoring UI 🔥', 'JSX in Depth'] },
   { day: 8, subTitle: 'React Advanced Guides', learntSubjects: ['Code Splitting', 'Contexts', 'Error Boundaries', 'Forwarding Refs', 'Fragments'] },
   { day: 7, subTitle: 'Tailwind and styled components', learntSubjects: ['Added tailwind css in most of the places', 'Added 4 Styled components with conditional rendering', 'UI - Temperature Convertor', 'UI - Stocks 🤣'] },
   { day: 6, subTitle: 'Practicing Styling with Tailwind', learntSubjects: ['Added React Playground', 'Refactoring UI upto Page 51', 'Key Take : Colors are important not always', 'Styled some existing components'] },

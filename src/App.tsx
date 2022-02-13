@@ -18,6 +18,9 @@ import ErrorBoundaries from './components/advancedGuides/4_ErrorBoundary';
 import CreatingRef from './components/advancedGuides/5_ForwardingRefs/UsingReference';
 import loggingProps from './components/advancedGuides/5_ForwardingRefs/LogginProps';
 import { ThatReturnsFragments, ThatReturnsShortSyntaxFragments } from './components/advancedGuides/6_Fragments';
+import CommentList from './components/advancedGuides/7_HigherOrderComponents/7_CommentList';
+import { WordAdder } from 'components/advancedGuides/10_Optimizing_performance/10_InDepthExample';
+import Example from 'components/advancedGuides/9_JSXinDepts';
 
 function App() {
   return (
@@ -27,7 +30,9 @@ function App() {
         <CardContainer />
         <div className='px-2'>
           <PropsExample name='React Playground' />
-          <Calculator />
+          <ErrorBoundaries>
+            <Calculator />
+          </ErrorBoundaries>
           <FilterableProductTable />
           <HomePage isLoggedIn={false} />
           <ReactElement />
@@ -38,13 +43,12 @@ function App() {
           <List list={[1, 2, 3, 4]} />
           <ChildrenAsProps />
           <Forms />
-          <ErrorBoundaries>
-            <ComponentContainingContext />
-          </ErrorBoundaries>
+          <ComponentContainingContext />
           <CreatingRef />
           <ThatReturnsFragments />
           <ThatReturnsShortSyntaxFragments />
-
+          <CommentList />
+          <Example />
         </div>
       </div>
     </ThemeContext.Provider>

@@ -1,3 +1,4 @@
+import { NotPureComponentExample, ThisIsAPureComponent } from 'components/advancedGuides/10_Optimizing_performance/10_PureComponent'
 import React from 'react'
 import styled from 'styled-components'
 import { Heading } from '../../../uiComponents/Heading'
